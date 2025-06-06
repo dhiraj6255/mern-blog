@@ -44,13 +44,15 @@ const Footer = () => {
                 <div>
                     <h3 className='text-xl font-semibold'>Stay in the Loop</h3>
                     <p className='mt-2 text-sm'>Subscribe to get special offers, free giveaways, and more</p>
-                    <form action="" className='mt-4 flex'>
+                    <form className='mt-4 flex'>
                         <input
                             type="email"
                             placeholder='Your email address'
                             className='w-full p-2 rounded-l-md bg-gray-700 text-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500'
                         />
-                        <button type='submit' className='bg-red-600 text-white px-4 rounded-r-md hover:bg-red-700'>Subscribe</button>
+                        <button type='submit' disabled className='bg-red-600 text-white px-4 rounded-r-md hover:bg-red-700'>
+                            Subscribe
+                        </button>
                     </form>
                 </div>
             </div>
