@@ -34,7 +34,7 @@ const CreateBlog = () => {
         try {
             dispatch(setLoading(true));
 
-            const res = await axios.post('http://localhost:8000/api/v1/blog/',
+            const res = await axios.post('https://mern-blog-fvfo.onrender.com/api/v1/blog/',
                 { title, category },
                 {
                     headers: { "Content-Type": "application/json" },

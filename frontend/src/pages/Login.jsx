@@ -33,7 +33,7 @@ const Login = () => {
         e.preventDefault()
         try {
             dispatch(setLoading(true))
-            const res = await axios.post('http://localhost:8000/api/v1/user/login', input, { headers: { "Content-Type": "application/json" }, withCredentials: true })
+            const res = await axios.post('https://mern-blog-fvfo.onrender.com/api/v1/user/login', input, { headers: { "Content-Type": "application/json" }, withCredentials: true })
             if (res.data.success) {
                 navigate('/')
                 dispatch(setUser(res.data.user))

@@ -36,7 +36,7 @@ const Signup = () => {
         e.preventDefault()
         try {
             dispatch(setLoading(true))
-            const res = await axios.post('http://localhost:8000/api/v1/user/register', user, { headers: { "Content-Type": "application/json" }, withCredentials: true })
+            const res = await axios.post('https://mern-blog-fvfo.onrender.com/api/v1/user/register', user, { headers: { "Content-Type": "application/json" }, withCredentials: true })
             if (res.data.success) {
                 toast.success(res.data.message)
                 navigate('/login')
