@@ -7,10 +7,10 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon backend/server.js",
-    "build": "npm install && npm install --prefix frontend && npm build --prefix frontend",
-    "start": "nodemon backend/server.js"
-  },
+  "dev": "nodemon backend/server.js",
+  "build": "cd frontend && npm install && npm run build",
+  "start": "node backend/server.js"
+},
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "cloudinary": "^2.6.1",
