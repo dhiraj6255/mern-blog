@@ -46,7 +46,7 @@ const Navbar = () => {
 
     const logoutHandler = async () => {
         try {
-            const res = await axios.get('https://mern-blog-fvfo.onrender.com/api/v1/user/logout', { withCredentials: true })
+            const res = await axios.get('https://mern-blog-axdb.onrender.com/api/v1/user/logout', { withCredentials: true })
             if (res.data.success) {
                 navigate('/')
                 dispatch(setUser(null))

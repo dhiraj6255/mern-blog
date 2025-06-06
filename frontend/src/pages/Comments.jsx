@@ -20,7 +20,7 @@ const Comments = () => {
 
     const getTotalComments = async () => {
         try {
-            const res = await axios.get(`https://mern-blog-fvfo.onrender.com/api/v1/comment/my-blog/comments`, { withCredentials: true })
+            const res = await axios.get(`https://mern-blog-axdb.onrender.com/api/v1/comment/my-blog/comments`, { withCredentials: true })
             if (res.data.success) {
                 setAllComments(res.data.comments)
             }
